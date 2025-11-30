@@ -45,7 +45,7 @@ document.getElementById("calcBtn").addEventListener("click", function () {
     document.getElementById("count").textContent = count;
     document.getElementById("max").textContent = max;
     document.getElementById("min").textContent = min;
-    document.getElementById("range").textContent = range;
+    document.getElementById("range").textContent = range.toFixed(decimals);
 
     document.getElementById("result").classList.remove("hidden");
 });
