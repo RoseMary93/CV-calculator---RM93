@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV 計算機 | RM93</title>
+
+    <!-- 用於 PWA / 桌面捷徑 -->
+    <link rel="icon" type="image/png" href="./icon.png">
+    <link rel="apple-touch-icon" href="./icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./icon.png">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -35,14 +41,31 @@
         </div>
 
         <button id="calcBtn">計算</button>
+        <button id="clearBtn" class="clear-btn">清除輸入內容</button>
 
         <div id="result" class="result hidden">
             <h2>計算結果</h2>
-            <p id="mean"></p>
-            <p id="std"></p>
-            <p id="cv"></p>
+
+            <div class="card-grid">
+                <div class="card"><strong>平均值</strong><p id="mean"></p></div>
+                <div class="card"><strong>標準差</strong><p id="std"></p></div>
+                <div class="card"><strong>變異係數 (CV)</strong><p id="cv"></p></div>
+            </div>
+
+            <h3 style="margin-top: 20px; color:#4a90e2;">附加統計資料</h3>
+
+            <div class="card-grid">
+                <div class="card"><strong>樣本數</strong><p id="count"></p></div>
+                <div class="card"><strong>最大值</strong><p id="max"></p></div>
+                <div class="card"><strong>最小值</strong><p id="min"></p></div>
+                <div class="card"><strong>範圍</strong><p id="range"></p></div>
+            </div>
         </div>
     </div>
+
+    <p class="footer-note">
+        本工具僅提供概算用途，不保證結果之正確性，請自行判斷使用風險。
+    </p>
 
     <script src="app.js"></script>
 </body>

@@ -77,3 +77,43 @@ button:hover {
 .result h2 {
     color: #4a90e2;
 }
+
+/* 原有 CSS 不動，只新增以下 */
+
+.clear-btn {
+    width: 100%;
+    padding: 12px;
+    background: #cccccc;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.clear-btn:hover {
+    background: #b5b5b5;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 12px;
+    border-radius: 12px;
+    border: 2px solid #d8ecff;
+    text-align: center;
+}
+
+.footer-note {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    padding: 15px 0 25px 0;
+}
